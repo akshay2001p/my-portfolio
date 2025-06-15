@@ -146,13 +146,35 @@
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
+            /* Removed background and text-fill-color from here as image will be used */
+            color: var(--text-light); /* Ensure text color is visible if image fails to load */
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            display: flex; /* Allow image and text to sit side-by-side */
+            align-items: center; /* Vertically align items */
+        }
+
+        .logo-img {
+            width: 40px; /* Adjust as needed */
+            height: 40px; /* Adjust as needed */
+            border-radius: 50%;
+            margin-right: 10px; /* Space between logo and text */
+            vertical-align: middle; /* Align with text */
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.5); /* Optional: add a subtle shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .logo:hover .logo-img {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 0 25px rgba(0, 212, 255, 0.8);
+        }
+
+        .logo span { /* Style for the "AP" text */
             background: linear-gradient(135deg, var(--primary-color), var(--purple));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            position: relative;
         }
 
         .logo::after {
@@ -1081,15 +1103,12 @@
     </style>
 </head>
 <body>
-    <!-- Loading Overlay -->
     <div class="loading-overlay" id="loadingOverlay">
         <div class="loader"></div>
     </div>
 
-    <!-- Progress Bar -->
     <div class="progress-bar" id="progressBar"></div>
 
-    <!-- Cursor Trail -->
     <div class="cursor-trail" id="cursorTrail"></div>
 
     <div class="bg-animation">
@@ -1098,7 +1117,9 @@
 
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">AP</a>
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Akshay P Logo" class="logo-img"> 
+            </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -1114,7 +1135,6 @@
         </div>
     </nav>
 
-    <!-- Mobile Navigation -->
     <div class="mobile-nav" id="mobileNav">
         <ul>
             <li><a href="#home">Home</a></li>
