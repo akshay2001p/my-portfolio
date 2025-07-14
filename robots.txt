@@ -10,7 +10,7 @@ Disallow: /private/
 Disallow: /*.pdf
 
 # Sitemap location
-Sitemap: https://akshay-a3b5.onrender.com/sitemap.xml
+Sitemap: https://devakshay-portfolio.onrender.com/sitemap.xml
 
 # Crawl delay (optional - helps with server load)
 Crawl-delay: 1
