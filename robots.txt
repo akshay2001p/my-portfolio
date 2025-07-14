@@ -1,8 +1,27 @@
 User-agent: *
 Allow: /
+Allow: /images/
+Allow: /*.css
+Allow: /*.js
+
+# Block common bot paths (not applicable but good practice)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf
 
 # Sitemap location
 Sitemap: https://akshay-a3b5.onrender.com/sitemap.xml
 
-# Crawl delay (optional)
+# Crawl delay (optional - helps with server load)
 Crawl-delay: 1
+
+# Additional directives for better SEO
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
