@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://yourwebsite.com/sitemap.xml
+Sitemap: https://akshay-a3b5.onrender.com/sitemap.xml
 
 # Crawl delay (optional)
 Crawl-delay: 1
