@@ -3,7 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshay P - Software Engineer</title>
+    <title>Akshay P - Software Engineer | Full Stack Developer Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Akshay P is a passionate software engineer with 1 year of experience in full-stack development, React, Node.js, and modern web technologies. View my portfolio and projects.">
+    <meta name="keywords" content="Akshay P, Software Engineer, Full Stack Developer, React Developer, Node.js, JavaScript, TypeScript, Web Developer, Portfolio, Frontend, Backend">
+    <meta name="author" content="Akshay P">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Akshay P - Software Engineer | Full Stack Developer Portfolio">
+    <meta property="og:description" content="Passionate software engineer specializing in full-stack development with React, Node.js, and modern web technologies. Explore my projects and get in touch.">
+    <meta property="og:image" content="https://yourwebsite.com/images/pro.jpeg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Akshay P Portfolio">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Akshay P - Software Engineer | Full Stack Developer Portfolio">
+    <meta name="twitter:description" content="Passionate software engineer specializing in full-stack development with React, Node.js, and modern web technologies.">
+    <meta name="twitter:image" content="https://yourwebsite.com/images/pro.jpeg">
+    <meta name="twitter:creator" content="@akshay_p_dev">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Akshay P",
+      "jobTitle": "Software Engineer",
+      "description": "Passionate software engineer with 1 year of experience in full-stack development",
+      "url": "https://yourwebsite.com",
+      "image": "https://yourwebsite.com/images/pro.jpeg",
+      "email": "akshay513p@gmail.com",
+      "telephone": "+91-6235210270",
+      "sameAs": [
+        "https://www.linkedin.com/in/akshay-p-4b9a6b269",
+        "https://github.com/akshay2001p"
+      ],
+      "knowsAbout": [
+        "React",
+        "Node.js",
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Full Stack Development",
+        "Web Development",
+        "Software Engineering"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      }
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -893,160 +961,29 @@
             background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
         }
 
-        /* Advanced Animations */
-        @keyframes slideInUp {
-            from {
-                opacity: 0;
-                transform: translateY(80px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
         }
 
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-80px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
+        /* Contact links styling */
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
 
-        @keyframes slideInRight {
-            from {
-                opacity: 0;
-                transform: translateX(80px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        /* Scroll Animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .fade-in-left {
-            opacity: 0;
-            transform: translateX(-50px);
-            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .fade-in-left.visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .fade-in-right {
-            opacity: 0;
-            transform: translateX(50px);
-            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .fade-in-right.visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .about-content,
-            .contact-content {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            section {
-                padding: 4rem 5%;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .skills-grid {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            }
-        }
-
-        /* Loading Animation */
-        .loading-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--bg-darker);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            transition: opacity 0.5s ease;
-        }
-
-        .loading-overlay.hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .loader {
-            width: 60px;
-            height: 60px;
-            border: 3px solid rgba(0, 212, 255, 0.3);
-            border-top: 3px solid var(--primary-color);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Cursor Trail Effect */
-        .cursor-trail {
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            background: radial-gradient(circle, var(--primary-color), transparent);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9998;
-            opacity: 0.7;
-            transition: all 0.1s ease;
-        }
-
-        /* Progress Bar */
-        .progress-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--primary-color), var(--purple));
-            z-index: 9999;
-            transition: width 0.3s ease;
+        .contact-item a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
         }
 
         /* Enhanced Mobile Menu */
@@ -1185,46 +1122,46 @@
         <div class="floating-particles" id="particles"></div>
     </div>
 
-    <nav id="navbar">
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <a href="#" class="logo">
+            <a href="#home" class="logo" aria-label="Akshay P - Software Engineer Home">
                 <img src="images/logo.png" alt="Akshay P Logo" class="logo-img"> 
             </a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#home" role="menuitem" aria-label="Go to Home section">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem" aria-label="Go to About section">About</a></li>
+                <li role="none"><a href="#skills" role="menuitem" aria-label="Go to Skills section">Skills</a></li>
+                <li role="none"><a href="#projects" role="menuitem" aria-label="Go to Projects section">Projects</a></li>
+                <li role="none"><a href="#contact" role="menuitem" aria-label="Go to Contact section">Contact</a></li>
             </ul>
-            <div class="mobile-menu-btn" id="mobileMenuBtn">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <div class="mobile-nav" id="mobileNav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+        <ul role="menubar">
+            <li role="none"><a href="#home" role="menuitem">Home</a></li>
+            <li role="none"><a href="#about" role="menuitem">About</a></li>
+            <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+            <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+            <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
         </ul>
-    </div>
+    </nav>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="hero-image">
-                <img src="images/pro.jpeg" alt="Akshay P - Software Engineer" class="profile-photo">
-            </div>
+            <header class="hero-image">
+                <img src="images/pro.jpeg" alt="Akshay P - Professional Software Engineer Portrait" class="profile-photo" loading="eager">
+            </header>
             <h1>Akshay P</h1>
             <p class="subtitle">Software Engineer</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <a href="#projects" class="btn btn-primary" aria-label="View my portfolio projects">View My Work</a>
+                <a href="#contact" class="btn btn-secondary" aria-label="Contact me for opportunities">Get In Touch</a>
             </div>
         </div>
     </section>
@@ -1233,13 +1170,13 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <div class="about-text fade-in-left">
-                <p>I'm a passionate software engineer with 1 year of experience building scalable web applications and solving complex technical challenges. I specialize in full-stack development with expertise in modern JavaScript frameworks, cloud technologies, and agile methodologies.</p>
-                <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or mentoring aspiring developers. I believe in writing clean, maintainable code and creating exceptional user experiences that make a difference.</p>
+                <p>I'm a passionate <strong>software engineer</strong> with 1 year of experience building scalable web applications and solving complex technical challenges. I specialize in <strong>full-stack development</strong> with expertise in modern JavaScript frameworks, cloud technologies, and agile methodologies.</p>
+                <p>When I'm not coding, you'll find me exploring new technologies, contributing to <strong>open-source projects</strong>, or mentoring aspiring developers. I believe in writing clean, maintainable code and creating exceptional user experiences that make a difference.</p>
                 <p>My journey in technology is driven by curiosity and the desire to create innovative solutions that solve real-world problems. I'm always eager to learn new technologies and collaborate with talented teams.</p>
             </div>
             <div class="about-image fade-in-right">
                 <div class="profile-card">
-                    <div class="profile-img">👨‍💻</div>
+                    <div class="profile-img" role="img" aria-label="Developer icon">👨‍💻</div>
                     <h3>Software Engineer</h3>
                     <p>Passionate about creating innovative solutions and building the future of technology</p>
                 </div>
@@ -1250,126 +1187,126 @@
     <section id="skills" class="fade-in">
         <h2 class="section-title">Skills & Technologies</h2>
         <div class="skills-grid">
-            <div class="skill-card fade-in" style="animation-delay: 0.1s;">
-                <div class="skill-icon">⚛️</div>
+            <article class="skill-card fade-in" style="animation-delay: 0.1s;">
+                <div class="skill-icon" role="img" aria-label="Frontend development icon">⚛️</div>
                 <h3>Frontend Development</h3>
-                <p>React, Vue.js, TypeScript, HTML5, CSS3, SASS, Tailwind CSS, Next.js</p>
-            </div>
-            <div class="skill-card fade-in" style="animation-delay: 0.2s;">
-                <div class="skill-icon">⚙️</div>
+                <p><strong>React</strong>, Vue.js, TypeScript, HTML5, CSS3, SASS, Tailwind CSS, Next.js</p>
+            </article>
+            <article class="skill-card fade-in" style="animation-delay: 0.2s;">
+                <div class="skill-icon" role="img" aria-label="Backend development icon">⚙️</div>
                 <h3>Backend Development</h3>
-                <p>Node.js, Python, Express, Django, FastAPI, REST APIs, GraphQL</p>
-            </div>
-            <div class="skill-card fade-in" style="animation-delay: 0.3s;">
-                <div class="skill-icon">🗄️</div>
+                <p><strong>Node.js</strong>, Python, Express, Django, FastAPI, REST APIs, GraphQL</p>
+            </article>
+            <article class="skill-card fade-in" style="animation-delay: 0.3s;">
+                <div class="skill-icon" role="img" aria-label="Database management icon">🗄️</div>
                 <h3>Database Management</h3>
-                <p>MongoDB, PostgreSQL, MySQL, Redis, Elasticsearch, Firebase</p>
-            </div>
-            <div class="skill-card fade-in" style="animation-delay: 0.4s;">
-                <div class="skill-icon">☁️</div>
+                <p><strong>MongoDB</strong>, PostgreSQL, MySQL, Redis, Elasticsearch, Firebase</p>
+            </article>
+            <article class="skill-card fade-in" style="animation-delay: 0.4s;">
+                <div class="skill-icon" role="img" aria-label="Cloud and DevOps icon">☁️</div>
                 <h3>Cloud & DevOps</h3>
-                <p>AWS, Docker, Kubernetes, CI/CD, Git, Jenkins, Terraform</p>
-            </div>
-            <div class="skill-card fade-in" style="animation-delay: 0.5s;">
-                <div class="skill-icon">🤖</div>
+                <p><strong>AWS</strong>, Docker, Kubernetes, CI/CD, Git, Jenkins, Terraform</p>
+            </article>
+            <article class="skill-card fade-in" style="animation-delay: 0.5s;">
+                <div class="skill-icon" role="img" aria-label="AI and Machine Learning icon">🤖</div>
                 <h3>AI & Machine Learning</h3>
-                <p>TensorFlow, PyTorch, Scikit-learn, OpenAI API, Computer Vision</p>
-            </div>
-            <div class="skill-card fade-in" style="animation-delay: 0.6s;">
-                <div class="skill-icon">📱</div>
+                <p><strong>TensorFlow</strong>, PyTorch, Scikit-learn, OpenAI API, Computer Vision</p>
+            </article>
+            <article class="skill-card fade-in" style="animation-delay: 0.6s;">
+                <div class="skill-icon" role="img" aria-label="Mobile development icon">📱</div>
                 <h3>Mobile Development</h3>
-                <p>React Native, Flutter, iOS, Android, Progressive Web Apps</p>
-            </div>
+                <p><strong>React Native</strong>, Flutter, iOS, Android, Progressive Web Apps</p>
+            </article>
         </div>
     </section>
 
     <section id="projects" class="fade-in">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
-            <div class="project-card fade-in" style="animation-delay: 0.1s;">
-                <div class="project-image">🚀</div>
+            <article class="project-card fade-in" style="animation-delay: 0.1s;">
+                <div class="project-image" role="img" aria-label="E-commerce platform project">🚀</div>
                 <div class="project-content">
                     <h3 class="project-title">E-Commerce Platform</h3>
-                    <p class="project-description">Full-stack e-commerce solution with real-time inventory management, payment processing, admin dashboard, and advanced analytics. Built with modern technologies for optimal performance.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Stripe</span>
-                        <span class="tech-tag">Redis</span>
+                    <p class="project-description">Full-stack <strong>e-commerce solution</strong> with real-time inventory management, payment processing, admin dashboard, and advanced analytics. Built with modern technologies for optimal performance.</p>
+                    <div class="project-tech" role="list" aria-label="Technologies used">
+                        <span class="tech-tag" role="listitem">React</span>
+                        <span class="tech-tag" role="listitem">Node.js</span>
+                        <span class="tech-tag" role="listitem">MongoDB</span>
+                        <span class="tech-tag" role="listitem">Stripe</span>
+                        <span class="tech-tag" role="listitem">Redis</span>
                     </div>
                 </div>
-            </div>
-            <div class="project-card fade-in" style="animation-delay: 0.2s;">
-                <div class="project-image">📊</div>
+            </article>
+            <article class="project-card fade-in" style="animation-delay: 0.2s;">
+                <div class="project-image" role="img" aria-label="Analytics dashboard project">📊</div>
                 <div class="project-content">
                     <h3 class="project-title">Analytics Dashboard</h3>
-                    <p class="project-description">Real-time data visualization dashboard with interactive charts, customizable widgets, and advanced filtering for business intelligence and decision making.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">D3.js</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">WebSocket</span>
+                    <p class="project-description">Real-time <strong>data visualization dashboard</strong> with interactive charts, customizable widgets, and advanced filtering for business intelligence and decision making.</p>
+                    <div class="project-tech" role="list" aria-label="Technologies used">
+                        <span class="tech-tag" role="listitem">Vue.js</span>
+                        <span class="tech-tag" role="listitem">D3.js</span>
+                        <span class="tech-tag" role="listitem">Python</span>
+                        <span class="tech-tag" role="listitem">PostgreSQL</span>
+                        <span class="tech-tag" role="listitem">WebSocket</span>
                     </div>
                 </div>
-            </div>
-            <div class="project-card fade-in" style="animation-delay: 0.3s;">
-                <div class="project-image">🤖</div>
+            </article>
+            <article class="project-card fade-in" style="animation-delay: 0.3s;">
+                <div class="project-image" role="img" aria-label="AI chat application project">🤖</div>
                 <div class="project-content">
                     <h3 class="project-title">AI Chat Application</h3>
-                    <p class="project-description">Intelligent chatbot application with natural language processing, machine learning capabilities, and context-aware responses for enhanced user experience.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">OpenAI</span>
-                        <span class="tech-tag">WebSocket</span>
+                    <p class="project-description">Intelligent <strong>chatbot application</strong> with natural language processing, machine learning capabilities, and context-aware responses for enhanced user experience.</p>
+                    <div class="project-tech" role="list" aria-label="Technologies used">
+                        <span class="tech-tag" role="listitem">Python</span>
+                        <span class="tech-tag" role="listitem">TensorFlow</span>
+                        <span class="tech-tag" role="listitem">Flask</span>
+                        <span class="tech-tag" role="listitem">OpenAI</span>
+                        <span class="tech-tag" role="listitem">WebSocket</span>
                     </div>
                 </div>
-            </div>
-            <div class="project-card fade-in" style="animation-delay: 0.4s;">
-                <div class="project-image">🌐</div>
+            </article>
+            <article class="project-card fade-in" style="animation-delay: 0.4s;">
+                <div class="project-image" role="img" aria-label="Social media platform project">🌐</div>
                 <div class="project-content">
                     <h3 class="project-title">Social Media Platform</h3>
-                    <p class="project-description">Modern social networking platform with real-time messaging, media sharing, advanced privacy controls, and community features for enhanced user engagement.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">GraphQL</span>
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Redis</span>
+                    <p class="project-description">Modern <strong>social networking platform</strong> with real-time messaging, media sharing, advanced privacy controls, and community features for enhanced user engagement.</p>
+                    <div class="project-tech" role="list" aria-label="Technologies used">
+                        <span class="tech-tag" role="listitem">React</span>
+                        <span class="tech-tag" role="listitem">GraphQL</span>
+                        <span class="tech-tag" role="listitem">AWS</span>
+                        <span class="tech-tag" role="listitem">Docker</span>
+                        <span class="tech-tag" role="listitem">Redis</span>
                     </div>
                 </div>
-            </div>
-            <div class="project-card fade-in" style="animation-delay: 0.5s;">
-                <div class="project-image">📱</div>
+            </article>
+            <article class="project-card fade-in" style="animation-delay: 0.5s;">
+                <div class="project-image" role="img" aria-label="Task management app project">📱</div>
                 <div class="project-content">
                     <h3 class="project-title">Task Management App</h3>
-                    <p class="project-description">Cross-platform productivity application with team collaboration, project tracking, time management, and seamless synchronization across all devices.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React Native</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                    <p class="project-description">Cross-platform <strong>productivity application</strong> with team collaboration, project tracking, time management, and seamless synchronization across all devices.</p>
+                    <div class="project-tech" role="list" aria-label="Technologies used">
+                        <span class="tech-tag" role="listitem">React Native</span>
+                        <span class="tech-tag" role="listitem">TypeScript</span>
+                        <span class="tech-tag" role="listitem">Firebase</span>
+                        <span class="tech-tag" role="listitem">Node.js</span>
+                        <span class="tech-tag" role="listitem">MongoDB</span>
                     </div>
                 </div>
-            </div>
-            <div class="project-card fade-in" style="animation-delay: 0.6s;">
-                <div class="project-image">🎵</div>
+            </article>
+            <article class="project-card fade-in" style="animation-delay: 0.6s;">
+                <div class="project-image" role="img" aria-label="Music streaming platform project">🎵</div>
                 <div class="project-content">
                     <h3 class="project-title">Music Streaming Platform</h3>
-                    <p class="project-description">Full-featured music streaming service with personalized recommendations, playlist creation, offline listening, and social sharing capabilities.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">ML Algorithms</span>
-                        <span class="tech-tag">AWS S3</span>
-                        <span class="tech-tag">PostgreSQL</span>
+                    <p class="project-description">Full-featured <strong>music streaming service</strong> with personalized recommendations, playlist creation, offline listening, and social sharing capabilities.</p>
+                    <div class="project-tech" role="list" aria-label="Technologies used">
+                        <span class="tech-tag" role="listitem">Next.js</span>
+                        <span class="tech-tag" role="listitem">Python</span>
+                        <span class="tech-tag" role="listitem">ML Algorithms</span>
+                        <span class="tech-tag" role="listitem">AWS S3</span>
+                        <span class="tech-tag" role="listitem">PostgreSQL</span>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -1378,57 +1315,61 @@
         <div class="contact-content">
             <div class="contact-info fade-in-left">
                 <div class="contact-item">
-                    <div class="contact-icon">📧</div>
+                    <div class="contact-icon" role="img" aria-label="Email icon">📧</div>
                     <div>
                         <h4>Email</h4>
-                        <p>akshay513p[a]gmail.com</p>
+                        <p><a href="mailto:akshay513p@gmail.com" aria-label="Send email to Akshay P">akshay513p[a]gmail.com</a></p>
                     </div>
                 </div>
                 <div class="contact-item">
-                    <div class="contact-icon">📱</div>
+                    <div class="contact-icon" role="img" aria-label="Phone icon">📱</div>
                     <div>
                         <h4>Phone</h4>
-                        <p>+91 6235210270</p>
+                        <p><a href="tel:+916235210270" aria-label="Call Akshay P">+91 6235210270</a></p>
                     </div>
                 </div>
                 <div class="contact-item">
-                    <div class="contact-icon">🌐</div>
+                    <div class="contact-icon" role="img" aria-label="LinkedIn icon">🌐</div>
                     <div>
                         <h4>LinkedIn</h4>
-                        <p>linkedin.com/in/akshay-p-4b9a6b269</p>
+                        <p><a href="https://linkedin.com/in/akshay-p-4b9a6b269" target="_blank" rel="noopener noreferrer" aria-label="Visit Akshay P's LinkedIn profile">linkedin.com/in/akshay-p-4b9a6b269</a></p>
                     </div>
                 </div>
                 <div class="contact-item">
-                    <div class="contact-icon">💻</div>
+                    <div class="contact-icon" role="img" aria-label="GitHub icon">💻</div>
                     <div>
                         <h4>GitHub</h4>
-                        <p>github.com/akshay2001p</p>
+                        <p><a href="https://github.com/akshay2001p" target="_blank" rel="noopener noreferrer" aria-label="Visit Akshay P's GitHub profile">github.com/akshay2001p</a></p>
                     </div>
                 </div>
             </div>
-            <form class="contact-form fade-in-right">
+            <form class="contact-form fade-in-right" aria-label="Contact form">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required aria-describedby="name-help">
+                    <small id="name-help" class="sr-only">Enter your full name</small>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required aria-describedby="email-help">
+                    <small id="email-help" class="sr-only">Enter your email address</small>
                 </div>
                 <div class="form-group">
                     <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required>
+                    <input type="text" id="subject" name="subject" required aria-describedby="subject-help">
+                    <small id="subject-help" class="sr-only">Enter the subject of your message</small>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <textarea id="message" name="message" rows="5" required aria-describedby="message-help"></textarea>
+                    <small id="message-help" class="sr-only">Enter your message</small>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-primary" aria-label="Send message">Send Message</button>
             </form>
         </div>
     </section>
 
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; 2025 Akshay P. All rights reserved.</p>
     </footer>
 
@@ -1506,8 +1447,11 @@
         const mobileNav = document.getElementById('mobileNav');
 
         mobileMenuBtn.addEventListener('click', () => {
+            const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
             mobileMenuBtn.classList.toggle('active');
             mobileNav.classList.toggle('active');
+            mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+            mobileNav.setAttribute('aria-hidden', isExpanded);
         });
 
         // Close mobile menu when clicking on a link
@@ -1515,6 +1459,8 @@
             link.addEventListener('click', () => {
                 mobileMenuBtn.classList.remove('active');
                 mobileNav.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                mobileNav.setAttribute('aria-hidden', 'true');
             });
         });
 
